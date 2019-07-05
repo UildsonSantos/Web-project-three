@@ -1,0 +1,47 @@
+
+<div class="col col-1">
+  <a href="/admin/postagens/add"> Postar</a>
+</div>
+
+
+{{#each postagens}}
+
+  <div class="row">
+    <div class="primeiroDiv">
+      <h3>{{title}}</h3>
+      <div class="segundoDiv">
+      <img src="{{imageUrl}}" >
+      </div>
+    </div>
+    <div class="rows">
+      <div class="col col-3"></div>
+      <div class="col col-3"></div>
+      <div class="col col-3"></div>
+      <div class="col col-3"></div>
+
+      <div class="col col-2">
+        <form class="" action="/admin/postagens/deletar" method="post">
+          <input type="hidden" name="id" value="{{_id}}">
+          <button type="submit" >Excluir</button>
+        </form>
+      </div>
+      <div class="col col-3">
+        <button type="button" name="button"></button>
+        <a href="/admin/postagens/edit{{_id}}">Editar</a>
+      </div>
+
+
+  <div class="col col-3"></div>
+  <div class="col col-3"></div>
+  <div class="col col-3"></div>
+  <div class="col col-3"></div>
+
+
+    </div>
+  </div>
+
+  {{else}}
+  <div class="primeiroDiv">
+    <h3>Nenhuma postagem registrada</h3>
+  </div>
+{{/each}}

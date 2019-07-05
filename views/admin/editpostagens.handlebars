@@ -1,0 +1,18 @@
+{{#each erros}}
+  <div class="primeiroDiv">{{texto}}</div>
+  {{else}}
+
+{{/each}}
+
+  <div class="row">
+    <div class="primeiroDiv">
+      <img src="{{postagens.imageUrl}}" alt="">
+      <form class="" action="/admin/postagens/edit" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{{postagens._id}}">
+        <input type="text" name="title" value="{{postagens.title}}">
+        <input type="file" name="image" id="image">
+        <button  type="submit" name="button">Editar</button>
+      </form>
+
+    </div>
+  </div>

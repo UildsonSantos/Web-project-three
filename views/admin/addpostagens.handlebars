@@ -1,0 +1,45 @@
+{{#each erros}}
+  <div class="primeiroDiv">{{texto}}</div>
+  {{else}}
+
+{{/each}}
+<div class="container">
+      <!--uma coluna-->
+
+    <div class="row">
+      <div class="primeiroDiv">
+
+        <form class="" action="/admin/postagens/nova" method="post" enctype="multipart/form-data">
+
+          <label for="title">Descrição</label>
+          <input type="text" name="title" id="title">
+
+          <div class="segundoDiv">
+            <label for="image">Image</label>
+            <input type="file" name="image" id="image">
+          </div>
+          <button  type="submit" name="button">Adicionar</button>
+        </form>
+
+        <div class="segundoDiv">
+          <img class="displayed"src="/images/quarta.jpg" alt="">
+          <img class="displayedQui"src="/images/quinta.jpg" alt="">
+        </div>
+
+
+      </div>
+    </div>
+</div>
+<!-- impute escondido -->
+
+<!--<input type="hidden" name="id" value="usuario.id">  -->
+
+<!-- mudar a action  -->
+
+<!-- criar um testarea
+
+ <textarea name="name" rows="8" cols="80"></textarea> -->
+
+<!-- criar um button
+
+<button type="button" name="button"></button>  -->

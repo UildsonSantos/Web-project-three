@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box; /* pra servir em todos os navegadores */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+
+   font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    background-color: #fff;
+    color: #333;
+    font-style: normal;
+
+    min-width: 220px;
+
+}
+
+/* conteiner */
+.container  {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+    background-color: #fafafa;
+
+}
+    @media (min-width: 2600px) { /* 1170px o tamanho do site */
+        .container {
+            max-width: 2600px;
+            padding: 0;
+        }
+    }
+
+/* Linha - Dividir o conteudo e zerar o padding dos elemtos das pontas*/
+.row {
+    margin-left: -5px; /* espaçamento entre as linhas */
+    margin-right: -5px;
+    border-bottom-width: 6px;
+    background-color: #fafafa;
+    border-color: #fff;
+    border-style: solid;
+
+}
+
+/* para evitar que o conteudo flutue em torno das linhas
+e que elas não tenham um tamanho menor que eles */
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+    }
+    .row:after {
+        clear: both;
+    }
+
+/* colunas */
+.col {
+    display: inline-block; /* para ter todas as caracteristicas do elemento inblock
+    porém se comportar como elemento inline (flutuar, para esquerda); com float
+    nçao temos o controle vertical*/
+
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-right: -4px; /* para resetar os margin padrão que o inline-block coloca */
+    /*rack - para dar suporte para navegadores antigos  */
+    *zoom: 1;
+    *display: inline;
+}
+
+@@media (min-width:928px) {
+  .col-2 {
+    width: 40%;
+  }
+}
+
+.col-2 {
+  width: 9.7777%;
+  text-align:right;
+  padding: 7px 15px 15px 15px;
+  margin: 2px 2px;
+}
+.col-3 {
+  width: 9.7777%;
+  text-align:justify;
+  padding: 1px 1px 5px 1px;
+}
+
+.col-1 {
+  width: 100%;
+  text-align:right;
+  padding: 10px 60px;
+  margin: 2px 2px;
+}
+
+.test {
+
+  background: #f5d5fe;
+
+  text-align: center;
+}
+
+.primeiroDiv {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    text-decoration: none;
+    color: #0070c9;
+    cursor: pointer;
+}
+
+.segundoDiv {
+
+  padding: 5px;
+  text-align: center;
+  width: 0 auto;
+  margin: 0;
+  align-content: center;
+  justify-content: center;
+
+
+}
+
+.primeiroDiv .sublink{
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  text-align: center;
+  font-size: 17px;
+    line-height: 1.42115;
+    font-weight: 400;
+    letter-spacing: .012em;
+    justify-content: center;
+    padding-top: 57px;
+
+
+}
+
+ h3.subCabeçalho {
+  display: block;
+  font-weight: normal;
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+ a {
+  color: #0070c9;
+  text-decoration: none; /*tirar linha underline */
+  padding: 10px 15px;
+  position:static;
+  box-sizing: content-box;
+  display: inline-block;
+  position: relative;
+  height: 44px;
+  z-index: 1;
+  vertical-align: top;
+}
+
+
+/*----------------------------------------------------------------------------*/
+.menuzinho{
+  display: none;
+}
+
+header{
+  height: 44px;
+  direction: ltr;
+  text-align: left;
+  background-color: #333;
+}
+
+header label{
+  color: #efefef;
+  display: block;
+  padding: 5px 5px;
+  width: 9px;
+  display: none;
+}
+
+header label:hover{
+      opacity: .65;
+}
+
+.menuzinho{
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 5px 5px;
+    position: relative;
+    z-index: 2;
+    vertical-align: top;
+}
+
+.menu{
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 5px 5px;
+    position: relative;
+    z-index: 2;
+    vertical-align: top;
+}
+
+.menuzinho ul{
+  list-style: none;/* tirar as bolinhas */
+  margin: 0 15px;
+  width: auto;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-pack:justify;
+}
+
+.menu ul{
+  list-style: none;/* tirar as bolinhas */
+  margin: 0 15px;
+  width: auto;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-pack:justify;
+}
+.displayedQui{
+  display: none;
+}
+
+.displayedQua{
+  margin: auto;
+}
+.displayedTer{
+  display: none;
+}
+
+.displayed{
+  margin: auto;
+}
+
+.menu ul li a{
+  color: #efefef;
+  font-size: 15px;
+  font-style: normal;
+  text-decoration: none; /*tirar linha underline */
+  padding: 10px 15px;
+  position:static;
+  box-sizing:   content-box;
+  letter-spacing: normal;
+  display: inline-block;
+  position: relative;
+  height: 44px;
+  z-index: 1;
+  vertical-align: top;
+}
+
+.menu ul li a img{
+  color: #efefef;
+  background-position: center;
+  margin-top: -10px;
+
+}
+
+.menuzinho ul li a img{
+  color: #efefef;
+  background-position: center;
+  margin-top: -17px;
+
+}
+.menuicon {
+
+    font-size: 17px;
+    box-sizing:   content-box;
+    letter-spacing: normal;
+    display: inline-block;
+    vertical-align: top;
+    flex-direction:column; /* para organizar os itens da lista ul em coluna*/
+
+  }
+.menuicon a{
+    color:  #fff;
+}
+.cima{
+  margin-top: -8px;
+  margin-left: -30px;
+}
+.baixo{
+  margin-top: -56px;
+  margin-left: -30px;
+}
+
+.menu li a:hover{
+      opacity: .65; /* pra deixar a font opaca quando passar o mouse */
+}
+
+/* so vai ler o codigo abaixo apenas para valores maiores que *411px */
+@media (max-width: 905px){
+
+  /* mostra o botão menu*/
+  header label{
+    display: block;
+  }
+
+  .menu{
+    display: none;
+  }
+  /* na lista de menu */
+  .menuzinho{
+    display: block;
+  }
+
+  .menuzinho li a:hover{
+        opacity: .65; /* pra deixar a font opaca quando passar o mouse */
+  }
+  .displayedQui{
+    display: block;
+    margin: auto;
+  }
+  .displayedQua{
+    display: none;
+  }
+  .displayedTer{
+    display: block;
+    margin: auto;
+  }
+  .displayed{
+    display: none;
+  }
+  .subCabeçalho{
+    width: 95%;
+  }
+  .excluir{
+    display: none;
+  }
+
+}

@@ -1,0 +1,51 @@
+<header>
+  <nav class="menuzinho">
+    <ul>
+      <li>
+        <ul class="menuicon">
+          <li class="cima"><a href="#">&#x02014;</a> </li>
+          <li class="baixo"><a href="#">&#x02014;</a> </li>
+        </ul>
+      </li>
+      <li><a href="#"><img src="/images/maça.svg" alt="Apple"></a></li>
+      <li><a href="#"><img src="/images/planilha.svg" alt="Apple"></a></li>
+    </ul>
+  </nav>
+  <!--comentario-->
+  <nav class="menu">
+    <ul>
+      <li><a href="/"><img src="/images/maça.svg" alt="Apple"></a></li>
+      <li><a href="/">Mac</a></li>
+      <li><a href="/">iPad</a></li>
+      <li><a href="/">iPhone</a></li>
+      <li><a href="/">Watch</a></li>
+      <li><a href="/">TV</a></li>
+      <li><a href="/">Music</a></li>
+      <li><a href="/">Suporte</a></li>
+      <li><a href="/"><img src="/images/pesquisa.svg" alt="Apple"></a></li>
+      <li><a href="/"><img src="/images/planilha.svg" alt="Apple"></a></li>
+      <li><a href="/postagens">Postagens</a></li>
+
+      {{#if user}}
+        <li><a href="/usuarios/logout">Sair</a></li>
+
+      {{else}}
+        <li><a href="/usuarios/login">Loguin</a></li>
+        <li><a href="/usuarios/registro">Registro</a></li>
+      {{/if}}
+    </ul>
+  </nav>
+</header>
+
+  <div class="row">
+    {{>_msg}}
+    <div class="primeiroDiv">
+      <div class="sublink">
+            <img src="/images/segundo.png" alt="">
+            <h3 class="subCabeçalho">Design todo tela. A maior duração de bateria em um iPhone.<br class="excluir">Desempenho mais rápido. Fotos com qualidade de estúdio
+            </h3>
+            <a href="#">Saiba mais &#x0003E;</a>
+            <a href="#">  Comprar &#x0003E;</a>
+          </div>
+        </div>
+      </div>
